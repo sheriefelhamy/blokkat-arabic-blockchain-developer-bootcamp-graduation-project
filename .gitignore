@@ -1,41 +1,166 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
+# Dependencies
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
+pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# Next.js
+.next/
+out/
+build/
+dist/
 
-# vercel
-.vercel
+# Environment variables
+.env
+./NFT-tickets/.env
+.env.local
+.env.development.local  
+.env.test.local
+.env.production.local
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output/
+
+# ESLint cache
+.eslintcache
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+
+# Gatsby files
+.cache/
+public/
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Temporary folders
+tmp/
+temp/
+
+# Foundry/Smart Contract specific
+NFT-tickets/cache/
+NFT-tickets/out/
+NFT-tickets/broadcast/
+NFT-tickets/deployments/
+
+# Forge build artifacts
+artifacts/
+typechain/
+typechain-types/
+
+# Hardhat files (if used)
+artifacts
+cache
+coverage.json
+
+# Private keys and sensitive data
+*.key
+*.pem
+.secret
+private.json
+
+# Local blockchain data
+.ethereum/
+
+# Deployment artifacts
+deployments.json
+
+# Generated files
+generated/
+
+# Test artifacts
+test-results/
+coverage-report/
+
+# Backup files
+*.backup
+*.bak
+
+# Package manager lock files (choose one)
+# yarn.lock
+# package-lock.json
+# pnpm-lock.yaml
+
+# Local development database
+*.db
+*.sqlite
+*.sqlite3
+
+# Miscellaneous
+*.tar.gz
+*.zip
+*.rar
+
+# Remix IDE artifacts
+.deps/
+contracts/artifacts/
+
+# Certora
+.certora*
+certora.conf
+
+# Slither
+slither.db.json
+
+# Gas reports
+gas-report.txt
+gasReporterOutput.json
+
+# Mythril
+mythril.json
+
+# Echidna
+corpus/
+crytic-export/
