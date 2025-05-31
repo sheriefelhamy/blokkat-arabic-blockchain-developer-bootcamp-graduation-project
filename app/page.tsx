@@ -1267,7 +1267,7 @@ export default function TicketSystem() {
     return (Number(wei) / 1e18).toFixed(4);
   };
 
-  const isOwner = contractOwner && userAddress && contractOwner.toLowerCase() === userAddress.toLowerCase();
+  const isOwner = contractOwner && userAddress && contractOwner === userAddress;
 
   return (
     <main className="max-w-6xl mx-auto p-6">
