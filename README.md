@@ -54,6 +54,7 @@ dream/
 │   │   ├── Factory.sol      # Main factory contract
 │   │   └── Tickets.sol      # Individual ticket contract template
 │   ├── test/                # Smart contract tests
+│   │   ├── TicketFactoryTest.t.sol      # factory and tickets testing contract
 │   ├── foundry.toml         # Foundry configuration
 │   ├── remappings.txt       # Import remappings for dependencies
 │   └── README.md            # Smart contract specific documentation
@@ -352,7 +353,7 @@ forge script script/DeployFactory.s.sol:DeployScript \
 ### Video Walkthrough
 Watch a complete demonstration of the NFT Ticket System in action:
 
-**[🎥 Complete Demo Video - NFT Ticket System Walkthrough](https://your-demo-video-link.com)**
+**[🎥 Complete Demo Video - NFT Ticket System Walkthrough](https://docs.google.com/videos/d/13b_32_UIT2Xg59oSlTFNqKmB-htRxjL-0oWH1Q6To4A/edit?usp=sharing)**
 
 ### Demo Highlights
 
